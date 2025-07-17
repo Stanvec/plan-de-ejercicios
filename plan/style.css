@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #f4f4f9;
+    --dark-color: #333;
+    --light-color: #fff;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.instrucciones {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--primary-color);
+}
+
+.instrucciones h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.plan-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.dia-card {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.dia-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.dia-card.descanso {
+    background-color: #a3d2ca;
+    text-align: center;
+}
+
+.dia-card.descanso h3 {
+    color: #1e6f5c;
+    border-bottom: none;
+}
+
+.ejercicios-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ejercicios-lista li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ejercicios-lista li:last-child {
+    border-bottom: none;
+}
+
+.ejercicio-nombre {
+    font-weight: 700;
+}
+
+.ejercicio-reps {
+    font-size: 0.9rem;
+    color: #666;
+    background-color: #e9ecef;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+}
+
+.ejercicio-gif a {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    transition: background-color 0.3s;
+}
+
+.ejercicio-gif a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
